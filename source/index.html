@@ -4,18 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <h1 class="header__title">
             Авторский онлайн-курс массажа
         </h1>
-        <a href="#features"></a>
+        <div  class="header__button">
+            <a  class="header__button-link" href="#features">
+                <span>
+                    <svg class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"></path></g></svg></a>
+                </span>
+        </div>
+        
     </header>
-    <main>
-        <section>
+
+    <main class="main">
+
+        <section class="features" id="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+
+            <ul class="features-list">
+                <li class="features-list__item">
+                    Дипломированный специалист в области косметологии, мануальных практик, кинезиологии, рефлексокологии
+                </li>
+                <li class="features-list__item">
+                    Прошла множество обучений, мастер-классов у лучших школ России
+                </li>
+            </ul>
+        </section>
+
+        <section class="for-who">
+            <h2 class="for-who__title">Для кого обучение</h2>
+
+            <ul class="for-who-list">
+                <li class="for-who-list__item">Вы новичок, который хочет изучить все тонкости массажа лица</li>
+                <li class="for-who-list__item">
+                    Вы массажист, косметолог или косметик-эстетист без медицинского образования или с медицинским образованием,
+                    который хочет освоить новую технику в своей работе
+                </li>
+            </ul>
+        </section>
+
+        <section class="how-go">
+            <h2 class="how-go__title">Как проходит обучение</h2>
+
+            <ul class="how-go-list">
+                <li class="how-go-list__item">Онлайн обучение (очное удалённое обучение)</li>
+                <li class="how-go-list__item">Это не видеокурс</li>
+                <li class="how-go-list__item">Это не лекция по телефону</li>
+                <li class="how-go-list__item">Не рассылаю и не продаю видео и аудиозаписи</li>
+                <li class="how-go-list__item">
+                    Это полноценное ОЧНОЕ обучение проходящие "вживую" по видеосвязи с изучением всех приёмов и техник а также правильностью их выполнения
+                    со стороны преподователя
+                </li>
+            </ul>
             
         </section>
+
+        <section class="base-learn">
+            <div class="base-learn__image"></div>
+            <h2 class="base-learn__title">Базовый курс</h2>
+
+            <ul class="base-learn-list">
+                <li class="base-learn-list__item">Анатомия лица/физиология</li>
+                <li class="base-learn-list__item">Исскуство диагностики</li>
+                <li class="base-learn-list__item">Классический массаж лица</li>
+                <li class="base-learn-list__item">Рефлексокология</li>
+            </ul>
+
+            <p class="base-learn__text">
+                После прохождения данного курса вы с лёгкостью можете приступить к работе и видеть результаты
+            </p>
+
+            <p class="base-learn__price">Цена 12000 р.</p>
+
+        </section>
+        
+        <section class="advanced-learn">
+            <h2 class="advanced-learn__title">Продвинутый курс</h2>
+
+            <ul class="advanced-learn-list">
+                <li class="advanced-learn-list__item">Деформационная 3D анатомия лица</li>
+                <li class="advanced-learn-list__item">Хиромассаж лица</li>
+                <li class="advanced-learn-list__item">Рефлексокология лица (углублённая)</li>
+                <li class="advanced-learn-list__item">Миопластика лица</li>
+                <li class="advanced-learn-list__item">Массаж Гуаша</li>
+            </ul>
+
+            <p class="advanced-learn__text">
+                Пройдя "Продвинутый курс" у вас будет прочная основа для профессиональной практики в области массажа лица
+            </p>
+
+            <p class="advanced-learn__price">Цена 18000 р.</p>
+
+        </section>
+
+        <section class="have-questions">
+            <h2 class="have-questions__title">остались вопросы?</h2>
+
+            <p class="have-questions__text">
+                Остались вопросы по курсу, вы можете связаться с нами через мессенджеры
+            </p>
+
+            <a href="#" class="have-questions__button have-questions__button-telegram button">Telegram</a>
+            <a href="#" class="have-questions__button have-questions__button-whatsapp button">WhatsApp</a>
+        </section>
+
     </main>
 </body>
 </html>

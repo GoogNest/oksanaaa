@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Opinion-Pro-Light"), local("Opinion-Pro-Light"), url("../fonts/Opinion-Pro-Light.woff2") format("woff2"), url("../fonts/Opinion-Pro-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Opinion-Pro-Regular"), local("Opinion-Pro-Regular"), url("../fonts/Opinion-Pro-Regular.woff2") format("woff2"), url("../fonts/Opinion-Pro-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Opinion-Pro-Medium"), local("Opinion-Pro-Medium"), url("../fonts/Opinion-Pro-Medium.woff2") format("woff2"), url("../fonts/Opinion-Pro-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Opinion-Pro-SemiBold"), local("Opinion-Pro-SemiBold"), url("../fonts/Opinion-Pro-SemiBold.woff2") format("woff2"), url("../fonts/Opinion-Pro-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Opinion-Pro-Bold"), local("Opinion-Pro-Bold"), url("../fonts/Opinion-Pro-Bold.woff2") format("woff2"), url("../fonts/Opinion-Pro-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Ubuntu-Light"), local("Ubuntu-Light"), url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Ubuntu-Bold"), local("Ubuntu-Bold"), url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff"); }
+
+html, body {
+  min-width: 320px;
+  min-height: 3500px;
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Opinion Pro', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden; }
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.header {
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  position: relative;
+  background-color: darkorchid; }
+  .header::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-bottom: 4.4vh solid #222222;
+    border-right: 50vw solid transparent;
+    bottom: 0;
+    left: 0; }
+  .header::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-bottom: 4.4vh solid #222222;
+    border-left: 50vw solid transparent;
+    bottom: 0;
+    right: 0; }
+
+.header__title {
+  width: 100%;
+  margin: 0;
+  padding: 0 11%;
+  margin-top: 41vh;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: .5px;
+  text-align: center;
+  color: #ffffff; }
+
+.header__button {
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  bottom: 3.1vh;
+  text-align: center;
+  z-index: 5; }
+
+.header__button-link {
+  display: block;
+  width: 100%;
+  cursor: pointer; }
+
+.header__button-link svg {
+  width: 26px;
+  height: 13px; }
+
+.features {
+  color: #ffffff;
+  min-height: 350px;
+  background-color: #222222; }
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 5% 60px; }
+
+.features-list__item {
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px 0 35px;
+  position: relative; }
+  .features-list__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    opacity: 0.2; }
+
+.for-who {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; }
+
+.for-who__title {
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  padding-bottom: 30px; }
+
+.for-who-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 27px; }
+
+.for-who-list__item {
+  font-family: 'Ubuntu',Arial,sans-serif;
+  font-weight: 300;
+  color: #000000;
+  padding: 20px 0 25px; }
+
+.how-go {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 95px;
+  background-color: #ffffff; }
+
+.how-go__title {
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  padding-bottom: 30px; }
+
+.how-go-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 27px; }
+
+.how-go-list__item {
+  font-family: 'Ubuntu',Arial,sans-serif;
+  font-weight: 300;
+  color: #000000;
+  padding: 20px 0 0 30px;
+  position: relative; }
+  .how-go-list__item::before {
+    content: "";
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #222222;
+    opacity: 0.5;
+    left: 0;
+    top: 50%; }
+
+.base-learn {
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.base-learn__image {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  border-top: transparent;
+  border-radius: 10px 10px 0 0; }
+
+/*# sourceMappingURL=style.css.map */

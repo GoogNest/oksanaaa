@@ -1,0 +1,33 @@
+.for-who {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.for-who__title {
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+
+.for-who-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 27px;
+}
+
+.for-who-list__item {
+    font-family: 'Ubuntu',Arial,sans-serif;
+    font-weight: 300;
+    color: #000000;
+
+    padding: 20px 0 25px;
+}
