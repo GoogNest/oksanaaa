@@ -32,8 +32,28 @@
 
 .have-questions__buttons {
     width: 50%;
-    margin: 0 auto;    
+    margin: 50px auto;    
     display: flex;
     justify-content: space-around;
+}
+
+.have-questions__button {
+    display: block;
+    width: 45px;    
+    height: 45px; 
+} 
+
+.have-questions__button-telegram {
+    background-image: url(../../img/telegram.png);
+    background-size: 45px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.have-questions__button-whatsapp {
+    background-image: url(../../img/whatsapp.png);
+    background-size: 45px auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
