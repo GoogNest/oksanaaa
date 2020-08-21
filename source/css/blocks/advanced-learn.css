@@ -1,11 +1,11 @@
-.base-learn {
+.advanced-learn {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-.base-learn__image {
+.advanced-learn__image {
   margin: 0;
   padding: 0;
   height: 200px;
@@ -16,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.base-learn__title {
+.advanced-learn__title {
   font-style: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -25,16 +25,16 @@
   padding: 0;
   width: 100%; }
 
-.base-learn-list {
+.advanced-learn-list {
   list-style: none;
   margin: 0;
   padding: 0 25px;
   padding-left: 30px; }
 
-.base-learn-list__item {
+.advanced-learn-list__item {
   margin: 10px 0;
   position: relative; }
-  .base-learn-list__item::after {
+  .advanced-learn-list__item::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -44,14 +44,14 @@
     background-color: #000000;
     opacity: 0.2; }
 
-.base-learn__text {
+.advanced-learn__text {
   font-family: 'Ubuntu',Arial,sans-serif;
   font-weight: 300;
   color: #000000;
   text-align: center;
   margin: 25px; }
 
-.base-learn__price {
+.advanced-learn__price {
   display: block;
   box-sizing: border-box;
   width: 280px;
@@ -70,4 +70,4 @@
   -webkit-border-radius: 5px;
   cursor: pointer; }
 
-/*# sourceMappingURL=base-learn.css.map */
+/*# sourceMappingURL=advanced-learn.css.map */

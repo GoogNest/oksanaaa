@@ -80,11 +80,12 @@
                 После прохождения данного курса вы с лёгкостью можете приступить к работе и видеть результаты
             </p>
 
-            <p class="base-learn__price">Цена 12000 р.</p>
+            <a href="#" class="base-learn__price">Цена 12000 р.</a>
 
         </section>
         
         <section class="advanced-learn">
+            <div class="advanced-learn__image"></div>
             <h2 class="advanced-learn__title">Продвинутый курс</h2>
 
             <ul class="advanced-learn-list">
@@ -99,7 +100,7 @@
                 Пройдя "Продвинутый курс" у вас будет прочная основа для профессиональной практики в области массажа лица
             </p>
 
-            <p class="advanced-learn__price">Цена 18000 р.</p>
+            <a href="#" class="advanced-learn__price">Цена 18000 р.</a>
 
         </section>
 
@@ -119,6 +120,11 @@
     <script>
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
     </script>
 </body>
 </html>

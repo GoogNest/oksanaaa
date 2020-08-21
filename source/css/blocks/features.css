@@ -11,7 +11,7 @@
     height: 0;
     border-bottom: 35px solid #222222;
     border-right: 50vw solid transparent;
-    top: -34px;
+    top: -34.5px;
     left: 0; }
   .features::after {
     content: "";
@@ -21,7 +21,7 @@
     height: 0;
     border-bottom: 35px solid #222222;
     border-left: 50vw solid transparent;
-    top: -34px;
+    top: -34.5px;
     right: 0; }
 
 .features__button {
