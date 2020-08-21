@@ -8,6 +8,10 @@
   padding: 0;
   height: 200px;
   border-top: transparent;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+  background-image: url(../../img/face.jpg);
+  background-position: top 50px center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=base-learn.css.map */

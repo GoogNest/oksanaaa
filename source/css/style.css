@@ -86,6 +86,7 @@ input[type="radio"].visually-hidden {
 
 .header {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   padding: 0;
   display: flex;
   position: relative;
@@ -244,6 +245,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
   height: 200px;
   border-top: transparent;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+  background-image: url(../../img/face.jpg);
+  background-position: top 50px center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
