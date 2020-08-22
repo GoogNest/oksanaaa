@@ -53,6 +53,14 @@
   margin: 25px; }
 
 .advanced-learn__price {
+  font-family: 'Ubuntu',Arial,sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 25px; }
+
+.advanced-learn__details {
   display: block;
   box-sizing: border-box;
   width: 280px;
