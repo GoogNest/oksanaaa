@@ -1,1 +1,0 @@
-{"version":3,"file":"container.css","sources":["blocks/container.scss"],"sourcesContent":[".container {\r\n    width: auto;\r\n    margin: 0 auto;\r\n    padding: 0 30px;\r\n}"],"names":[],"mappings":"AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,MAAM,GAClB"}
