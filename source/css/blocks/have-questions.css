@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  background-color: #f0f0f0; }
+  background-color: #222222; }
 
 .have-questions__title {
   margin: 55px 0;
@@ -10,8 +10,10 @@
   font-size: 28px;
   line-height: 30px;
   font-weight: 600;
+  letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #ffffff; }
 
 .have-questions__text {
   margin: 0;
@@ -19,7 +21,9 @@
   font-size: 19px;
   line-height: 1.45;
   font-weight: 300;
-  text-align: center; }
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff; }
 
 .have-questions__buttons {
   width: 50%;
