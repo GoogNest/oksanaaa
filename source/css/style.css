@@ -85,7 +85,7 @@ input[type="radio"].visually-hidden {
   padding: 0 30px; }
 
 .page {
-  background-color: #b37344; }
+  background-color: #ffeddf; }
 
 .header {
   height: 100vh;
@@ -93,13 +93,17 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   position: relative;
-  background-color: #b37344; }
+  background-color: #ffeddf;
+  background-image: url(../../img/main-photo.JPG);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .header__title {
   width: 100%;
   margin: 0;
   padding: 0 11%;
-  margin-top: 41vh;
+  margin-top: 51vh;
   font-size: 30px;
   line-height: 36px;
   letter-spacing: .5px;
@@ -174,7 +178,7 @@ input[type="radio"].visually-hidden {
 .for-who {
   display: flex;
   flex-direction: column;
-  background-color: #b37344; }
+  background-color: #ffeddf; }
 
 .for-who__title {
   font-size: 28px;
@@ -203,7 +207,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-bottom: 95px;
-  background-color: #b37344; }
+  background-color: #ffeddf;
+  background-image: url(../../img/how-go.JPG);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .how-go__title {
   font-size: 28px;
@@ -220,23 +228,28 @@ input[type="radio"].visually-hidden {
 .how-go-list {
   list-style: none;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0 27px; }
 
 .how-go-list__item {
   font-family: 'Ubuntu',Arial,sans-serif;
   font-weight: 300;
   color: #000000;
-  padding: 20px 0 0 30px;
-  position: relative; }
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 20px auto;
+  padding: 15px 0 15px 10vw;
+  position: relative;
+  background-color: rgba(255, 237, 223, 0.8); }
   .how-go-list__item::before {
     content: "";
     position: absolute;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid #222222;
-    opacity: 0.5;
-    left: 0;
-    top: 50%; }
+    opacity: 0.9;
+    left: 3vw;
+    top: 32%; }
 
 .base-learn {
   display: flex;
@@ -350,11 +363,11 @@ input[type="radio"].visually-hidden {
     transform: translateY(-2000px); } }
 
 .base-learn__modal-details {
-  display: none;
+  display: block;
   position: fixed;
   width: 90vw;
-  height: 96vh;
-  top: 2vh;
+  height: 90vh;
+  top: 8vh;
   left: 5vw;
   z-index: 10;
   padding: 0;
@@ -366,7 +379,7 @@ input[type="radio"].visually-hidden {
 .base-learn__modal-details--close {
   width: 4vw;
   height: 4vw;
-  margin-top: 5vh;
+  margin-top: 3vh;
   margin-left: 80vw;
   padding: 0;
   border: 0;
@@ -378,10 +391,10 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   color: #000000;
   text-align: center;
-  margin: 2vh; }
+  margin: 0 2vw; }
 
 .base-learn__modal-details__image {
-  margin-top: 5vh;
+  margin-top: 2vh;
   padding: 0;
   height: 40vh;
   border-top: transparent;
@@ -413,7 +426,8 @@ input[type="radio"].visually-hidden {
 
 .base-learn__modal-details--modal-close {
   animation-name: close;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  display: none; }
 
 .base-learn__modal-details--modal-show {
   display: block;
@@ -421,6 +435,103 @@ input[type="radio"].visually-hidden {
   animation-duration: 2s; }
 
 .base-learn__modal-details--modal-error {
+  animation-name: shake;
+  animation-duration: 2s; }
+
+.base-learn__modal-buy {
+  display: none;
+  position: fixed;
+  width: 90vw;
+  height: 90vh;
+  top: 8vh;
+  left: 5vw;
+  z-index: 11;
+  padding: 0;
+  margin: 0;
+  border-radius: 4vw;
+  box-shadow: 0px 16px 20px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff; }
+
+.base-learn__modal-buy__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  width: 80%;
+  margin: 3vh auto; }
+
+.base-learn__modal-buy--close {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 3vh;
+  left: 80vw;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  opacity: 0.9; }
+
+.base-learn__modal-buy__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8vh; }
+
+.base-learn__modal-buy__item {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin: 2vh auto; }
+
+.base-learn__modal-buy label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 7px; }
+
+.base-learn__modal-buy input {
+  font: inherit;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 70vw;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  padding: 12px 12px;
+  height: 50px; }
+
+.base-learn__modal-buy__button-buy {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  width: 260px;
+  height: 50px;
+  margin: 3vh auto;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer; }
+
+.base-learn__modal-buy--modal-close {
+  animation-name: close;
+  animation-duration: 2s; }
+
+.base-learn__modal-buy--modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 2s; }
+
+.base-learn__modal-buy--modal-error {
   animation-name: shake;
   animation-duration: 2s; }
 
@@ -539,8 +650,8 @@ input[type="radio"].visually-hidden {
   display: none;
   position: fixed;
   width: 90vw;
-  height: 96vh;
-  top: 2vh;
+  height: 90vh;
+  top: 8vh;
   left: 5vw;
   z-index: 10;
   padding: 0;
@@ -552,7 +663,7 @@ input[type="radio"].visually-hidden {
 .advanced-learn__modal-details--close {
   width: 4vw;
   height: 4vw;
-  margin-top: 5vh;
+  margin-top: 3vh;
   margin-left: 80vw;
   padding: 0;
   border: 0;
@@ -564,10 +675,10 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   color: #000000;
   text-align: center;
-  margin-top: 2vh; }
+  margin: 0 2vw; }
 
 .advanced-learn__modal-details__image {
-  margin-top: 5vh;
+  margin-top: 2vh;
   padding: 0;
   height: 40vh;
   border-top: transparent;
@@ -607,6 +718,104 @@ input[type="radio"].visually-hidden {
   animation-duration: 2s; }
 
 .advanced-learn__modal-details--modal-error {
+  animation-name: shake;
+  animation-duration: 2s; }
+
+.advanced-learn__modal-buy {
+  display: block;
+  position: fixed;
+  width: 90vw;
+  height: 90vh;
+  top: 8vh;
+  left: 5vw;
+  z-index: 11;
+  padding: 0;
+  margin: 0;
+  border-radius: 4vw;
+  box-shadow: 0px 16px 20px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff; }
+
+.advanced-learn__modal-buy__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  width: 80%;
+  margin: 3vh auto; }
+
+.advanced-learn__modal-buy--close {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 3vh;
+  left: 80vw;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  opacity: 0.9; }
+
+.advanced-learn__modal-buy__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8vh; }
+
+.advanced-learn__modal-buy__item {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin: 2vh auto; }
+
+.advanced-learn__modal-buy label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 7px; }
+
+.advanced-learn__modal-buy input {
+  font: inherit;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 70vw;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  padding: 12px 12px;
+  height: 50px; }
+
+.advanced-learn__modal-buy__button-buy {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  width: 260px;
+  height: 50px;
+  margin: 3vh auto;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer; }
+
+.advanced-learn__modal-buy--modal-close {
+  animation-name: close;
+  animation-duration: 2s;
+  display: none; }
+
+.advanced-learn__modal-buy--modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 2s; }
+
+.advanced-learn__modal-buy--modal-error {
   animation-name: shake;
   animation-duration: 2s; }
 

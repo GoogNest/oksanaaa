@@ -4,13 +4,17 @@
   padding: 0;
   display: flex;
   position: relative;
-  background-color: #b37344; }
+  background-color: #ffeddf;
+  background-image: url(../../img/main-photo.JPG);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .header__title {
   width: 100%;
   margin: 0;
   padding: 0 11%;
-  margin-top: 41vh;
+  margin-top: 51vh;
   font-size: 30px;
   line-height: 36px;
   letter-spacing: .5px;
