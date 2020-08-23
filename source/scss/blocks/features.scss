@@ -39,6 +39,11 @@
     }
 }
 
+@keyframes bounce_button {
+    0%   { transform: translateY(0); }
+    50%   { transform: translateY(12px); }
+    100% { transform: translateY(0)    ; }
+}
 
 .features__button {
     position: absolute;
@@ -49,6 +54,9 @@
     top: -40px;
     text-align: center;
     z-index: 5;
+    animation-name: bounce_button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .features__button-link {
