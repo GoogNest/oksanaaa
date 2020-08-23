@@ -240,7 +240,7 @@ input[type="radio"].visually-hidden {
   margin: 20px auto;
   padding: 15px 0 15px 10vw;
   position: relative;
-  background-color: rgba(255, 237, 223, 0.8); }
+  background-color: rgba(255, 237, 223, 0.9); }
   .how-go-list__item::before {
     content: "";
     position: absolute;
@@ -319,7 +319,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 260px;
   height: 50px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 15px;
   font-size: 14px;
   line-height: 20px;
@@ -366,8 +366,7 @@ input[type="radio"].visually-hidden {
   display: block;
   position: fixed;
   width: 90vw;
-  height: 90vh;
-  top: 8vh;
+  top: 5vh;
   left: 5vw;
   z-index: 10;
   padding: 0;
@@ -442,8 +441,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: fixed;
   width: 90vw;
-  height: 90vh;
-  top: 8vh;
+  top: 5vh;
   left: 5vw;
   z-index: 11;
   padding: 0;
@@ -603,7 +601,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 260px;
   height: 50px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 15px;
   font-size: 14px;
   line-height: 20px;
@@ -650,8 +648,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: fixed;
   width: 90vw;
-  height: 90vh;
-  top: 8vh;
+  top: 5vh;
   left: 5vw;
   z-index: 10;
   padding: 0;
@@ -725,8 +722,7 @@ input[type="radio"].visually-hidden {
   display: block;
   position: fixed;
   width: 90vw;
-  height: 90vh;
-  top: 8vh;
+  top: 5vh;
   left: 5vw;
   z-index: 11;
   padding: 0;
