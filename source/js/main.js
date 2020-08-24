@@ -14,6 +14,8 @@ var btn_details__base__buy = document.querySelector(".base-learn__modal-details_
 var mod_details__base__buy = document.querySelector(".base-learn__modal-buy");
 var close__base__buy  = mod_details__base__buy.querySelector(".base-learn__modal-buy--close");
 
+var mod_overlay = document.querySelector(".modal-overlay");
+
 var isStorageSupport = true;
 var storage_login = "";
 var storage_email = "";
@@ -27,24 +29,28 @@ try {
 
 btn_details__advanced.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mod_details__advanced.classList.add("advanced-learn__modal-details--modal-show");   
+    mod_details__advanced.classList.add("advanced-learn__modal-details--modal-show");  
+    mod_overlay.classList.add("modal-overlay--show"); 
 });
 
 close__advanced.addEventListener("click", function (evt) {
     evt.preventDefault();
     mod_details__advanced.classList.remove("advanced-learn__modal-details--modal-show");
     mod_details__advanced.classList.remove("advanced-learn__modal-details--modal-error");
+    mod_overlay.classList.remove("modal-overlay--show");
 });
 
 btn_details__base.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mod_details__base.classList.add("base-learn__modal-details--modal-show");       
+    mod_details__base.classList.add("base-learn__modal-details--modal-show");   
+    mod_overlay.classList.add("modal-overlay--show");     
 });
 
 close__base.addEventListener("click", function (evt) {
     evt.preventDefault();
     mod_details__base.classList.remove("base-learn__modal-details--modal-show");
     mod_details__base.classList.remove("base-learn__modal-details--modal-error");
+    mod_overlay.classList.remove("modal-overlay--show");
 });
 
 btn_details__advanced__buy.addEventListener("click", function (evt) {
@@ -58,6 +64,7 @@ close__advanced__buy.addEventListener("click", function (evt) {
     evt.preventDefault();
     mod_details__advanced__buy.classList.remove("advanced-learn__modal-buy--modal-show");
     mod_details__advanced__buy.classList.remove("advanced-learn__modal-buy--modal-error");
+    mod_overlay.classList.remove("modal-overlay--show");
 });
 
 btn_details__base__buy.addEventListener("click", function (evt) {
@@ -71,40 +78,22 @@ close__base__buy.addEventListener("click", function (evt) {
     evt.preventDefault();
     mod_details__base__buy.classList.remove("base-learn__modal-buy--modal-show");
     mod_details__base__buy.classList.remove("base-learn__modal-buy--modal-error");
+    mod_overlay.classList.remove("modal-overlay--show");
 });
 
-// if (storage_login && storage_email) {
-    //     login.value = storage_login;
-    //     email.value = storage_email;
-    //     text.focus();
-    // } else {
-    //     login.focus(); 
-    // }
+mod_overlay.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mod_overlay.classList.remove("modal-overlay--show");
 
-// form.addEventListener("submit", function (evt) {
-    
-//     if (!login.value || !email.value) {
-//         evt.preventDefault();
-//         mod_wu.classList.remove("modal-error");
-//         mod_wu.offsetWidth = mod_wu.offsetWidth;
-//         mod_wu.classList.add("modal-error");
-//         console.log("введите логин и емайл");
-//     } else {
-//         if (isStorageSupport) {
-//         localStorage.setItem("login", login.value);
-//         localStorage.setItem("email", email.value);
-//         }
-//     }
-// });
+    mod_details__base.classList.remove("base-learn__modal-details--modal-show");
+    mod_details__base.classList.remove("base-learn__modal-details--modal-error");
 
+    mod_details__base__buy.classList.remove("base-learn__modal-buy--modal-show");
+    mod_details__base__buy.classList.remove("base-learn__modal-buy--modal-error");
 
+    mod_details__advanced.classList.remove("advanced-learn__modal-details--modal-show");
+    mod_details__advanced.classList.remove("advanced-learn__modal-details--modal-error");
 
-// window.addEventListener("keydown", function (evt) {
-//     if (evt.keyCode === 27) {
-//         if (mod_wu.classList.contains("modal-show")) {
-//             mod_wu.classList.remove("modal-show");
-//             mod_wu.classList.remove("modal-error");
-//             localStorage.clear();
-//         }
-//     }
-// });
+    mod_details__advanced__buy.classList.remove("advanced-learn__modal-buy--modal-show");
+    mod_details__advanced__buy.classList.remove("advanced-learn__modal-buy--modal-error");
+});
