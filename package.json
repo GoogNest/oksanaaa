@@ -1,14 +1,18 @@
 {
-  "name": "oksana",
+  "name": "mishka-20",
   "private": true,
-  "description": "web-site",
+  "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.10",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-watch": "^5.0.1",
-    "stylelint": "13.6.1"
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -27,12 +31,13 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Doofyz/oksanaaa.git"
+    "url": "git+https://github.com/Doofyz/mishka-20-adaptive.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Doofyz/oksanaaa/issues"
+    "url": "https://github.com/Doofyz/mishka-20-adaptive/issues"
   },
-  "homepage": "https://github.com/Doofyz/oksanaaa#readme"
+  "homepage": "https://github.com/Doofyz/mishka-20-adaptive#readme",
+  "browsersList": "last 2 versoions"
 }

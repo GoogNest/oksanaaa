@@ -75,7 +75,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden; }
 
@@ -149,6 +150,14 @@ input[type="radio"].visually-hidden {
     top: -35px;
     right: 0; }
 
+@-webkit-keyframes bounce_button {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(12px); }
+  100% {
+    transform: translateY(0); } }
+
 @keyframes bounce_button {
   0% {
     transform: translateY(0); }
@@ -164,9 +173,12 @@ input[type="radio"].visually-hidden {
   top: -40px;
   text-align: center;
   z-index: 5;
-  animation-name: bounce_button;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  -webkit-animation-name: bounce_button;
+          animation-name: bounce_button;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
 
 .features__button-link {
   display: block;
@@ -338,14 +350,20 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0 25px; }
 
-@keyframes ripple {
+@-webkit-keyframes ripple {
   20% {
     opacity: 0;
-    -webkit-transform: scale(2.5);
     transform: scale(2.5); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(2.5);
+    transform: scale(2.5); } }
+
+@keyframes ripple {
+  20% {
+    opacity: 0;
+    transform: scale(2.5); }
+  100% {
+    opacity: 0;
     transform: scale(2.5); } }
 
 .base-learn__details {
@@ -379,8 +397,6 @@ input[type="radio"].visually-hidden {
     left: -130%;
     background: rgba(235, 180, 150, 0.8);
     border-radius: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     z-index: 2;
     -webkit-animation-name: ripple;
@@ -392,6 +408,16 @@ input[type="radio"].visually-hidden {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite; }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px); }
+  50% {
+    transform: translateY(50px); }
+  75% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px); }
@@ -402,6 +428,14 @@ input[type="radio"].visually-hidden {
   100% {
     transform: translateY(0); } }
 
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  30%, 70% {
+    transform: translateX(-20px); }
+  50% {
+    transform: translateX(20px); } }
+
 @keyframes shake {
   0%, 100% {
     transform: translateX(0); }
@@ -409,6 +443,16 @@ input[type="radio"].visually-hidden {
     transform: translateX(-20px); }
   50% {
     transform: translateX(20px); } }
+
+@-webkit-keyframes close {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  75% {
+    transform: translateY(50px); }
+  100% {
+    transform: translateY(-2000px); } }
 
 @keyframes close {
   0% {
@@ -492,8 +536,6 @@ input[type="radio"].visually-hidden {
     left: -130%;
     background: rgba(235, 180, 150, 0.8);
     border-radius: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     z-index: 20;
     -webkit-animation-name: ripple;
@@ -506,18 +548,24 @@ input[type="radio"].visually-hidden {
     animation-iteration-count: infinite; }
 
 .base-learn__modal-details--modal-close {
-  animation-name: close;
-  animation-duration: 2s;
+  -webkit-animation-name: close;
+          animation-name: close;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   display: none; }
 
 .base-learn__modal-details--modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 2s; }
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .base-learn__modal-details--modal-error {
-  animation-name: shake;
-  animation-duration: 2s; }
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .base-learn__modal-buy {
   display: none;
@@ -603,17 +651,23 @@ input[type="radio"].visually-hidden {
   cursor: pointer; }
 
 .base-learn__modal-buy--modal-close {
-  animation-name: close;
-  animation-duration: 2s; }
+  -webkit-animation-name: close;
+          animation-name: close;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .base-learn__modal-buy--modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 2s; }
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .base-learn__modal-buy--modal-error {
-  animation-name: shake;
-  animation-duration: 2s; }
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .advanced-learn {
   display: flex;
@@ -681,11 +735,9 @@ input[type="radio"].visually-hidden {
 @keyframes ripple {
   20% {
     opacity: 0;
-    -webkit-transform: scale(2.5);
     transform: scale(2.5); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(2.5);
     transform: scale(2.5); } }
 
 .advanced-learn__details {
@@ -719,8 +771,6 @@ input[type="radio"].visually-hidden {
     left: -130%;
     background: rgba(235, 180, 150, 0.8);
     border-radius: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     z-index: 2;
     -webkit-animation-name: ripple;
@@ -832,8 +882,6 @@ input[type="radio"].visually-hidden {
     left: -130%;
     background: rgba(235, 180, 150, 0.8);
     border-radius: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     z-index: 20;
     -webkit-animation-name: ripple;
@@ -846,17 +894,23 @@ input[type="radio"].visually-hidden {
     animation-iteration-count: infinite; }
 
 .advanced-learn__modal-details--modal-close {
-  animation-name: close;
-  animation-duration: 2s; }
+  -webkit-animation-name: close;
+          animation-name: close;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .advanced-learn__modal-details--modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 2s; }
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .advanced-learn__modal-details--modal-error {
-  animation-name: shake;
-  animation-duration: 2s; }
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .advanced-learn__modal-buy {
   display: block;
@@ -942,18 +996,24 @@ input[type="radio"].visually-hidden {
   cursor: pointer; }
 
 .advanced-learn__modal-buy--modal-close {
-  animation-name: close;
-  animation-duration: 2s;
+  -webkit-animation-name: close;
+          animation-name: close;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   display: none; }
 
 .advanced-learn__modal-buy--modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 2s; }
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .advanced-learn__modal-buy--modal-error {
-  animation-name: shake;
-  animation-duration: 2s; }
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .have-questions {
   display: flex;

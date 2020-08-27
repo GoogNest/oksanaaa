@@ -24,6 +24,14 @@
     top: -35px;
     right: 0; }
 
+@-webkit-keyframes bounce_button {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(12px); }
+  100% {
+    transform: translateY(0); } }
+
 @keyframes bounce_button {
   0% {
     transform: translateY(0); }
@@ -39,9 +47,12 @@
   top: -40px;
   text-align: center;
   z-index: 5;
-  animation-name: bounce_button;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  -webkit-animation-name: bounce_button;
+          animation-name: bounce_button;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
 
 .features__button-link {
   display: block;
